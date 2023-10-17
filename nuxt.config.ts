@@ -1,7 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@vueuse/nuxt'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@vueuse/nuxt', '@nuxtjs/hanko'],
+  hanko: {
+    apiURL: process.env.NUXT_PUBLIC_HANKO_API_URL,
+    cookieName: 'hanko'
+  },
   image: {
     quality: 80,
     screens: {
