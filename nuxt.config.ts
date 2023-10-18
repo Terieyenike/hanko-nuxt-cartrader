@@ -4,7 +4,8 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@vueuse/nuxt', '@nuxtjs/hanko'],
   hanko: {
     apiURL: process.env.NUXT_PUBLIC_HANKO_API_URL,
-    cookieName: 'hanko'
+    cookieName: 'hanko',
+    // registerComponents: false
   },
   image: {
     quality: 80,

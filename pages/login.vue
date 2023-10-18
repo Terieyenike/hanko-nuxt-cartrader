@@ -1,10 +1,12 @@
 <script setup>
+import "~/assets/css/styles.css"
+
 definePageMeta({
   layout: "custom",
 });
 
 function afterLogin() {
- navigateTo("/profile");
+ navigateTo("/user");
 }
 </script>
 

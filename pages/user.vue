@@ -8,4 +8,5 @@ definePageMeta({
 <template>
   <hanko-profile />
   <LogoutButton />
+
 </template>
