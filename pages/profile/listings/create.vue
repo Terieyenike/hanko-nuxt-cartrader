@@ -88,6 +88,9 @@ const inputs = [
         placeholder=""
         @change-input="onChangeInput" />
       <car-ad-image @change-input="onChangeInput" />
+      <div>
+        <button class="bg-blue-700 text-white rounded py-2 px-7 mt-10" type="submit">Submit</button>
+      </div>
     </div>
   </div>
 </template>
