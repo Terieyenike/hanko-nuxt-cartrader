@@ -1,6 +1,15 @@
 <script setup>
 definePageMeta({
-  layout: "custom"
+  layout: "custom",
+  middleware: [
+    function (to, from) {
+      const user = useHanko()
+      if (user) {
+        return
+      }
+      return navigateTo("/login")
+    }
+  ]
 })
 const { listings } = useCars()
 </script>
