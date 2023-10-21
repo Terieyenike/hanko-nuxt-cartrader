@@ -62,6 +62,13 @@ const inputs = [
     placeholder: "Leather Interior, No Accidents",
   },
 ];
+
+const isButtonDisabled = computed(() => {
+  for (let key in info.value) {
+    if (!info.value[key]) return true
+  }
+  return false
+})
 </script>
 
 <template>
@@ -89,7 +96,7 @@ const inputs = [
         @change-input="onChangeInput" />
       <car-ad-image @change-input="onChangeInput" />
       <div>
-        <button class="bg-blue-700 text-white rounded py-2 px-7 mt-10" type="submit">Submit</button>
+        <button :disabled="isButtonDisabled" class="bg-blue-700 text-white rounded py-2 px-7 mt-10" type="submit">Submit</button>
       </div>
     </div>
   </div>
