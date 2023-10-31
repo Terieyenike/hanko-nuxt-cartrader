@@ -2,7 +2,7 @@
 const hanko = useHanko()
 function logout() {
   hanko!.user.logout();
- navigateTo("/login");
+  navigateTo("/login");
 }
 </script>
 <template>
