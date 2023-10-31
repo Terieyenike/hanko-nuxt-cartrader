@@ -1,4 +1,8 @@
-# Nuxt 3 Minimal Starter
+# Cartrader
+
+Find your next drive based on type and city location.
+
+![find your drive](https://github.com/Terieyenike/hanko-nuxt-cartrader/assets/25850598/03efbc3a-324c-46ea-8f6c-c06ba937252c)
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
@@ -72,4 +76,12 @@ yarn preview
 bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Tech stack
+
+- Nuxt
+- Tailwind CSS
+- Hanko for authentication
+
+## Author
+
+Teri Eyenike
